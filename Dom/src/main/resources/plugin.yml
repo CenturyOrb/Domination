@@ -1,0 +1,7 @@
+name: Domination
+version: '${project.version}'
+main: com.rosa.domination.Domination
+api-version: 1.19
+commands:
+  arena:
+  bluewins:

@@ -1,0 +1,10 @@
+com\rosa\domination\GameState.class
+com\rosa\domination\instance\Countdown.class
+com\rosa\domination\command\TestingCommand.class
+com\rosa\domination\manager\ArenaManager.class
+com\rosa\domination\manager\ConfigManager.class
+com\rosa\domination\Domination.class
+com\rosa\domination\instance\Arena.class
+com\rosa\domination\command\ArenaCommand.class
+com\rosa\domination\instance\Game.class
+com\rosa\domination\Team.class

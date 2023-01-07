@@ -1,0 +1,35 @@
+required-players: 2
+countdown-seconds: 120
+hub:
+  world: 'world'
+  x: 161
+  y: -31
+  z: -32
+  yaw: 90
+  pitch: 0
+lobby:
+  world: 'world'
+  x: 57
+  y: -61
+  z: -219
+  yaw: 90
+  pitch: 0
+arenas:
+  0:
+    spawns:
+      red:
+        0:
+          world: 'world'
+          x: 8
+          y: -47
+          z: 8
+          yaw: 90
+          pitch: 0
+      blue:
+        0:
+          world: 'world'
+          x: -8
+          y: -47
+          z: -8
+          yaw: 90
+          pitch: 0
