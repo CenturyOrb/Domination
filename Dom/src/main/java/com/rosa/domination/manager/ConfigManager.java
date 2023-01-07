@@ -42,4 +42,9 @@ public class ConfigManager {
                 (float) config.getDouble("hub.yaw"),
                 (float) config.getDouble("hub.pitch"));
     }
+    
+    //Get plugin prefix
+    public static String getPrefix() {
+    	return config.getString("prefix");
+    }
 }
