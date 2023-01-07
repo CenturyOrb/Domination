@@ -39,6 +39,16 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <relocations>
+                  				<relocation>
+                    				<pattern>co.aikar.commands</pattern>
+                    				<shadedPattern>com.rose.domination.acf</shadedPattern>
+                  				</relocation>
+                  				<relocation>
+                    				<pattern>co.aikar.locales</pattern>
+                  					<shadedPattern>com.rosa.domination.locales</shadedPattern>
+              					</relocation>
+              				</relocations>
                         </configuration>
                     </execution>
                 </executions>
@@ -61,6 +71,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+		<repository>
+  			<id>aikar</id>
+  			<url>https://repo.aikar.co/content/groups/aikar/</url>
+    	</repository>
     </repositories>
 
     <dependencies>
@@ -70,5 +84,15 @@
             <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-text</artifactId>
+			<version>1.1</version>
+		</dependency>
+    	<dependency>
+        	<groupId>co.aikar</groupId>
+        	<artifactId>acf-paper</artifactId>
+        	<version>0.5.1-SNAPSHOT</version>
+    	</dependency>
     </dependencies>
 </project>
