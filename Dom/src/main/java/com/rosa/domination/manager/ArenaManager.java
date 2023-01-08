@@ -49,15 +49,15 @@ public class ArenaManager {
 			arenas.add(new Arena(domination, Integer.parseInt(str), blueSpawns, redSpawns));
 		}
 
-		//Set command completions
-		setArenaCompletions(domination);
+		Bukkit.getScheduler().runTaskLater(domination, () -> {
+			//Set command completions
+			setArenaCompletions(domination);
+		}, 1);
 	}
 
 	//Sets command completions for the arena ids
 	public void setArenaCompletions(final Domination domination) {
-		Bukkit.getScheduler().runTaskLater(domination, () -> {
-			domination.getCommandManager().getCommandCompletions().registerAsyncCompletion("arenas", c -> getArenaIds());
-		}, 1);
+		domination.getCommandManager().getCommandCompletions().registerAsyncCompletion("arenas", c -> getArenaIds());
 	}
 
 	// return the list of arenas
