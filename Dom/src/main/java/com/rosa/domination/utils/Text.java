@@ -38,7 +38,7 @@ public class Text {
 		}
 
 		for (final Player player : Bukkit.getOnlinePlayers()) {
-			if (player.hasPermission("duels.staff")) {
+			if (player.hasPermission("domination.staff")) {
 				tell(player, message);
 			}
 		}
