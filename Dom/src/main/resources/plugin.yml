@@ -5,3 +5,8 @@ api-version: 1.19
 commands:
   arena:
   bluewins:
+permissions:
+  domination.staff:
+    default: op
+  domination.arena:
+    default: true
