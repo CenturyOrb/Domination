@@ -45,6 +45,12 @@ public class ConfigManager {
     
     //Get plugin prefix
     public static String getPrefix() {
-    	return config.getString("prefix");
+        String prefix = config.getString("prefix");
+
+        if (prefix == null)   {
+            prefix = "";
+        }
+
+    	return prefix;
     }
 }
