@@ -55,9 +55,7 @@ public class ArenaManager {
 
 	//Sets command completions for the arena ids
 	public void setArenaCompletions(final Domination domination) {
-		Bukkit.getScheduler().runTaskLater(domination, () -> {
-			domination.getCommandManager().getCommandCompletions().registerAsyncCompletion("arenas", c -> getArenaIds());
-		}, 1);
+		domination.getCommandManager().getCommandCompletions().registerAsyncCompletion("arenas", c -> getArenaIds());
 	}
 
 	// return the list of arenas
