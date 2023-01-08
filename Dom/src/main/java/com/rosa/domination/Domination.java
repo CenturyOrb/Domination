@@ -21,8 +21,8 @@ public final class Domination extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		ConfigManager.setUpConfig(this);
-		arenaManager = new ArenaManager(this);
 		commandManager = new PaperCommandManager(this);
+		arenaManager = new ArenaManager(this);
 
 		getCommand("arena").setExecutor(new ArenaCommand(this));
 		getCommand("bluewins").setExecutor(new TestingCommand(this));
