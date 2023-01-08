@@ -1,14 +1,16 @@
 package com.rosa.domination.utils;
 
-import com.rosa.domination.manager.ConfigManager;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import com.rosa.domination.manager.ConfigManager;
+
+import net.md_5.bungee.api.ChatColor;
 
 public class Text {
 	/**
@@ -118,7 +120,7 @@ public class Text {
 			Matcher rgbMatch = rgbPattern.matcher(msg);
 			while (rgbMatch.find()) {
 				final String color = msg.substring(rgbMatch.start(), rgbMatch.end());
-				msg = msg.replace(color, ChatColor.valueOf(color.substring(1)) + "");
+				msg = msg.replace(color, ChatColor.of(color.substring(1)) + "");
 				rgbMatch = rgbPattern.matcher(msg);
 			}
 		}
