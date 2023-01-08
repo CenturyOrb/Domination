@@ -18,6 +18,6 @@ public class ArenaHelp extends BaseCommand {
 	@HelpCommand
 	@CommandPermission("domination.arena.help")
 	public void help(final CommandSender sender) {
-		//todo if needed
+		//todo if needed booger
 	}
 }
