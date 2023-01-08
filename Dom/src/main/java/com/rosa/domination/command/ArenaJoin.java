@@ -27,7 +27,7 @@ public class ArenaJoin extends BaseCommand {
 			return;
 		}
 
-		if (arenaId == null || !(StringUtils.isNumeric(arenaId))) {
+		if (arenaId == null || StringUtils.isNumeric(arenaId)) {
 			Text.send(sender, "#redInvalid ID!");
 			return;
 		}
