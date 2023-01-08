@@ -3,7 +3,6 @@ version: '1.0-SNAPSHOT'
 main: com.rosa.domination.Domination
 api-version: 1.19
 commands:
-  arena:
   bluewins:
 permissions:
   domination.staff:
