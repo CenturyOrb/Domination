@@ -5,9 +5,11 @@ import org.bukkit.command.CommandSender;
 import com.rosa.domination.Domination;
 
 import co.aikar.commands.BaseCommand;
+import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.HelpCommand;
 
+@CommandAlias("arena")
 public class ArenaHelp extends BaseCommand {
 	Domination domination;
 

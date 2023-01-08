@@ -10,10 +10,12 @@ import com.rosa.domination.instance.Arena;
 import com.rosa.domination.utils.Text;
 
 import co.aikar.commands.BaseCommand;
+import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.CommandCompletion;
 import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.Subcommand;
 
+@CommandAlias("arena")
 public class ArenaJoin extends BaseCommand {
 	Domination domination;
 
