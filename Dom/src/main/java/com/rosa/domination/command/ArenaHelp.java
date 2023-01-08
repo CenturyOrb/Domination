@@ -5,6 +5,7 @@ import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.HelpCommand;
 import com.rosa.domination.Domination;
+import com.rosa.domination.utils.Text;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -22,9 +23,9 @@ public class ArenaHelp extends BaseCommand {
 		if (!(sender instanceof Player))   { return; }
 		final Player player = (Player) sender;
 
-		player.sendMessage("#redAvailable arena commands:");
-		player.sendMessage("#yellow- /arena list (Shows list of arenas)");
-		player.sendMessage("#yellow- /arena leave (Leave your current arena)");
-		player.sendMessage("#yellow- /arena join <id> (Join an arena)");
+		Text.send(sender, "#redAvailable arena commands:");
+		Text.send(sender, "#yellow- /arena list (Shows list of arenas)");
+		Text.send(sender, "#yellow- /arena leave (Leave your current arena)");
+		Text.send(sender, "#yellow- /arena join <id> (Join an arena)");
 	}
 }
