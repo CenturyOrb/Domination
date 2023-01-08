@@ -2,7 +2,6 @@ package com.rosa.domination;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.rosa.domination.command.ArenaCommand;
 import com.rosa.domination.command.ArenaHelp;
 import com.rosa.domination.command.ArenaJoin;
 import com.rosa.domination.command.ArenaLeave;
@@ -24,7 +23,6 @@ public final class Domination extends JavaPlugin {
 		commandManager = new PaperCommandManager(this);
 		arenaManager = new ArenaManager(this);
 
-		getCommand("arena").setExecutor(new ArenaCommand(this));
 		getCommand("bluewins").setExecutor(new TestingCommand(this));
 
 		registerCommands();
