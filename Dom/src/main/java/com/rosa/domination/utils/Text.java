@@ -1,15 +1,14 @@
 package com.rosa.domination.utils;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
+import com.rosa.domination.manager.ConfigManager;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.rosa.domination.manager.ConfigManager;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Text {
 	/**
@@ -55,7 +54,7 @@ public class Text {
 			return;
 		}
 
-		player.sendMessage(color(prefix() + message));
+		player.sendMessage(color(ConfigManager.getPrefix() + message));
 	}
 
 	/**
@@ -69,7 +68,7 @@ public class Text {
 			return;
 		}
 
-		sender.sendMessage(color(prefix() + message));
+		sender.sendMessage(color(ConfigManager.getPrefix() + message));
 	}
 
 	/**
@@ -83,22 +82,7 @@ public class Text {
 			return;
 		}
 
-		System.out.println(color(prefix() + message));
-	}
-
-	/**
-	 * Get prefix of the plugin.
-	 *
-	 * @return prefix
-	 */
-	public static String prefix() {
-		String prefix = ConfigManager.getPrefix();
-
-		if (prefix == null) {
-			prefix = "";
-		}
-
-		return prefix;
+		System.out.println(color(ConfigManager.getPrefix() + message));
 	}
 
 	private static final Pattern rgbPattern = Pattern.compile("&#[a-fA-F0-9]{6}");

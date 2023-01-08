@@ -1,19 +1,14 @@
 package com.rosa.domination.command;
 
-import org.apache.commons.lang3.StringUtils;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
-
+import co.aikar.commands.BaseCommand;
+import co.aikar.commands.annotation.*;
 import com.rosa.domination.Domination;
 import com.rosa.domination.GameState;
 import com.rosa.domination.instance.Arena;
 import com.rosa.domination.utils.Text;
-
-import co.aikar.commands.BaseCommand;
-import co.aikar.commands.annotation.CommandAlias;
-import co.aikar.commands.annotation.CommandCompletion;
-import co.aikar.commands.annotation.CommandPermission;
-import co.aikar.commands.annotation.Subcommand;
+import org.apache.commons.lang3.StringUtils;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 
 @CommandAlias("arena")
 public class ArenaJoin extends BaseCommand {
