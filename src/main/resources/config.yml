@@ -1,0 +1,70 @@
+prefix: "[Domination] "
+required-players: 2
+countdown-seconds: 10
+hub:
+  world: 'world'
+  x: 125
+  y: -15
+  z: -22
+  yaw: 90
+  pitch: 0
+lobby:
+  world: 'world'
+  x: 57
+  y: -61
+  z: -219
+  yaw: 90
+  pitch: 0
+arenas:
+  0:
+    zones:
+      alpha:
+        zoneName: 'alpha'
+        world: 'world'
+        point1:
+          x: 5
+          y: -32
+          z: -73
+        point2:
+          x: 11
+          y: -47
+          z: -79
+      beta:
+        zoneName: 'beta'
+        world: 'world'
+        point1:
+          x: 11
+          y: -32
+          z: 5
+        point2:
+          x: 5
+          y: -47
+          z: 11
+      charlie:
+        zoneName: 'charlie'
+        world: 'world'
+        point1:
+          x: 5
+          y: -32
+          z: 95
+        point2:
+          x: 11
+          y: -47
+          z: 89
+    spawns:
+      red:
+        0:
+          world: 'world'
+          x: 107
+          y: -45
+          z: -26
+          yaw: 90
+          pitch: 0
+      blue:
+        0:
+          world: 'world'
+          x: -93
+          y: -45
+          z: 43
+          yaw: -90
+          pitch: 0
